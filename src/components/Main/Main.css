@@ -56,6 +56,7 @@
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
 .main .card img{
     width: 50px;
     height: 50px;
@@ -73,4 +74,5 @@
     font-weight: 700;
     color: #3b5998;
     margin-top: 20px;
+
 }
