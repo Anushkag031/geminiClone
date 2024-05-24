@@ -1,0 +1,76 @@
+.main{
+    flex : 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.main .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    padding: 20px;
+    color: #683b98
+}
+.main .nav img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 40%;
+}
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+.main .greet{
+    margin: 50px 0;
+    font-size: 50px;
+    font-weight: 700;
+    color : #8b94a8;
+    padding: 20px;
+}
+
+.main .greet span{
+    background: -webkit-linear-gradient(180deg, #3b5998, #a077c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main .cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* cards will be responsive (horizontal) */
+    gap: 15px;
+    justify-content: space-between;
+}
+.main .card{
+    background-color: #f0f2f5;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+.main .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.main .card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.main .card p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3b5998;
+    margin-top: 20px;
+}
