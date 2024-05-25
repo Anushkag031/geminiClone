@@ -55,6 +55,9 @@
 .main .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(180deg, #a1aeca, #e8d5fa);
+    
+    
 }
 
 .main .card img{
@@ -76,3 +79,55 @@
     margin-top: 20px;
 
 }
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f2f5;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    gap: 10px;
+    border-radius: 50px;
+    
+}
+.search-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    flex: 1;
+    background: transparent ;
+}
+.search-box img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.search-box img:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s;
+
+}
+.main .bottom-info{
+    text-align: center;
+    font-weight: 300;
+    margin: 15px auto;
+    color: #8b94a8;
+
+}
+
