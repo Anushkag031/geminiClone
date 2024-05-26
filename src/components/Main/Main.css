@@ -215,3 +215,9 @@
     50% { opacity: 1.0; }
     100% { opacity: 0.1; }
 }
+.result-data p{
+    font-size: 20px;
+    color: #797e88;
+    line-height: 1.5;
+    
+}

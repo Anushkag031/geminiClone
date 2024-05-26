@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Sidebar.css";
 import { assets } from "../../assets/assets";
+import { Context } from "../../context/Context";
 
 const Sidebar = () => {
   const [extended, setExtended] = React.useState(false);
+
+  const { onSent, setRecentPrompt, recentPrompt, previousPrompt, input, setInput } = useContext(Context);
 
   return (
     <div className="sidebar">
@@ -22,10 +25,15 @@ const Sidebar = () => {
         {extended ? ( // usestate used, hide items when extended is false
           <div className="recent">
             <p className="recent-title">Recent </p>
-            <div className="recent-entry">
-              <img src={assets.message_icon} alt="message_icon" />
-              <p>What is react...</p>
-            </div>
+            {previousPrompt.map((item,index)=> {
+              return (
+                <div className="recent-entry" key={index}>
+                  <img src={assets.message_icon} alt="message_icon" />
+                  <p>{item.slice(0,18)}...</p>
+                </div>
+              );
+            })}
+            
           </div>
         ) : null}
       </div>
