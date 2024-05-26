@@ -80,11 +80,13 @@ const Main = () => {
             <div>
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
-              <img
+              {/* to show the send icon only when the input is not empty */}
+              {input ?<img
                 onClick={() => onSent(input)} //to send the input value
                 src={assets.send_icon}
                 alt=""
-              />
+              />: null }
+              
             </div>
           </div>
           <p className="bottom-info">

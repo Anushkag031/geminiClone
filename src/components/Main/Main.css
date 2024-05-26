@@ -31,12 +31,15 @@
     font-weight: 700;
     color : #8b94a8;
     padding: 20px;
+    animation: bounceIn 2s ease-out;
+        animation-delay: 2s;
 }
 
 .main .greet span{
     background: -webkit-linear-gradient(180deg, #3b5998, #a077c7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 .main .cards
 {
@@ -79,6 +82,8 @@
     font-weight: 700;
     color: #3b5998;
     margin-top: 20px;
+        animation: bounceIn 2s ease-out;
+        animation-delay: 2s;
 
 }
 .main-bottom{
@@ -223,6 +228,47 @@
     line-height: 1.5;
     
 }
+@media (max-width:600px)
+{
+    .main .nav{
+        font-size: 20px;
+    }
+    .main .greet{
+        font-size: 30px;
+    }
+    .main .card p{
+        font-size: 15px;
+    }
+    .main .card img{
+        width: 40px;
+        height: 40px;
+    }
+    .main .nav img{
+        width: 70px;
+        height: 70px;
+    }
+    .main .bottom-info{
+        font-size: 15px;
+    }
+    .main .result-title{
+        font-size: 15px;
+    }
+    .result img{
+        width: 40px;
+        height: 40px;
+    }
+    .result-data p{
+        font-size: 15px;
+    }
+    .search-box img{
+        width: 20px;
+        height: 20px;
+    }
+    .search-box input{
+        font-size: 15px;
+    }
+
+}
 @keyframes bounceIn {
     0% {
       transform: scale(0);
@@ -236,11 +282,6 @@
       opacity: 1;
     }
   }
-  
-  span, p {
-    animation: bounceIn 2s ease-out;
-    animation-delay: 2s;
-  }
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -252,5 +293,10 @@
       transform: scale(1);
     }
   }
+  
+
+  
+  
+  
   
  
