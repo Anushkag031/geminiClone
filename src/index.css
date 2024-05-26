@@ -10,4 +10,30 @@
 #root{
   min-height: 100vh;
   display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out, slideIn 2s ease-in-out;
+
 }
+
+@keyframes fadeIn { /* Define the animation */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.main .nav p{
+  animation: pulse 2s ease-in-out infinite;
+}
+
